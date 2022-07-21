@@ -2,9 +2,9 @@ import pygame
 from pygame.locals import *
 
 pygame.init()
-
+pygame.font.init()
 size = width, height = 800, 600
-
+font = pygame.font.SysFont('Poppins-ExtraLight.ttf')
 cursor = pygame.image.load("cursor.png") 
 cursor_clicked = pygame.image.load("cursor_click.png")
 
