@@ -1,4 +1,5 @@
 import pygame
+from pygame.locals import *
 
 pygame.init()
 
@@ -19,4 +20,5 @@ while running:
         if event.type == KEYDOWN:
             if event.key == pygame.K_SPACE:
                 clicks += 1
+                print(clicks)
 
