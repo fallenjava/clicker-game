@@ -3,7 +3,7 @@ import sys, pygame
 pygame.init()
 
 
-size = width, height = 320, 240
+size = width, height = 1280, 720
 
 
 
