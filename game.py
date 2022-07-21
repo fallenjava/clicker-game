@@ -5,6 +5,8 @@ pygame.init()
 
 size = width, height = 800, 600
 
+cursor = pygame.image.load("cursor.png") 
+
 screen = pygame.display.set_mode(size)
 
 clicks = 0
