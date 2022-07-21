@@ -3,6 +3,7 @@ from pygame.locals import *
 
 pygame.init()
 pygame.font.init()
+pygame.display.init()
 size = width, height = 800, 600
 font = pygame.font.SysFont('Poppins-ExtraLight.ttf', 64)
 cursor = pygame.image.load("cursor.png") 
