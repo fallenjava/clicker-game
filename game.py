@@ -7,7 +7,9 @@ size = width, height = 800, 600
 font = pygame.font.SysFont('Poppins-ExtraLight.ttf', 64)
 cursor = pygame.image.load("cursor.png") 
 cursor_clicked = pygame.image.load("cursor_click.png")
+icon = pygame.image.load('icon.png')
 screen = pygame.display.set_mode(size)
+pygame.display.set_icon(icon)
 clicks = 0
 
 running = True
