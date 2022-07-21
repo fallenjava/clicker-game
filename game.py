@@ -9,8 +9,10 @@ size = width, height = 320, 240
 
 screen = pygame.display.set_mode(size)
 
-while 1:
+
+running = True
+while running:
 
     for event in pygame.event.get():
 
-        if event.type == pygame.QUIT: sys.exit()
+        if event.type == pygame.QUIT: running = False
