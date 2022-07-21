@@ -14,7 +14,7 @@ running = True
 while running:
 
     for event in pygame.event.get():
-
+        pygame.draw.rect()
         if event.type == pygame.QUIT: 
             running = False
 
