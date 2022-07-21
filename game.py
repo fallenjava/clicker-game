@@ -4,12 +4,10 @@ from pygame.locals import *
 pygame.init()
 pygame.font.init()
 size = width, height = 800, 600
-font = pygame.font.SysFont('Poppins-ExtraLight.ttf')
+font = pygame.font.SysFont('Poppins-ExtraLight.ttf', 64)
 cursor = pygame.image.load("cursor.png") 
 cursor_clicked = pygame.image.load("cursor_click.png")
-
 screen = pygame.display.set_mode(size)
-
 clicks = 0
 
 running = True
@@ -24,4 +22,8 @@ while running:
             if event.key == pygame.K_SPACE:
                 clicks += 1
                 print(clicks)
+    text = font.render("Clicks: " + str(clicks), True, (0, 0, 0))
+    screen.fill((255, 255, 255))
+    screen.blit(text, (300, 100))
+    pygame.display.flip()
 
