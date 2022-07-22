@@ -5,7 +5,7 @@ pygame.init()
 pygame.font.init()
 pygame.display.init()
 size = width, height = 800, 600
-font = pygame.font.Font('assets/Poppins-Extralight.ttf', 64)
+font = pygame.font.Font('assets/Poppins-ExtraLight.ttf', 64)
 cursor = pygame.image.load("assets/cursor.png") 
 cursor_clicked = pygame.image.load("assets/cursor_click.png")
 icon = pygame.image.load('assets/icon.png')
