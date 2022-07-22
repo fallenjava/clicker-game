@@ -22,10 +22,20 @@ while running:
         if event.type == pygame.QUIT: 
             running = False
 
+        left, middle, right = pygame.mouse.get_pressed()
+
         if event.type == KEYDOWN:
             if event.key == pygame.K_SPACE:
                 clicks += 1
                 print(clicks)
+        if left:
+            clicks += 0.5
+            print(clicks)
+        elif middle:
+            print("")
+        elif right:
+            print("")
+            
     text = font.render("Clicks: " + str(clicks), True, (0, 0, 0))
     screen.fill((255, 255, 255))
     screen.blit(text, (300, 100))
